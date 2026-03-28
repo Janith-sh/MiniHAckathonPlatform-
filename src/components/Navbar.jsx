@@ -1,8 +1,29 @@
+import { useNavigate } from "react-router-dom";
+import { LogOut } from "lucide-react";
+
 export default function Navbar() {
+  const navigate = useNavigate();
+
   return (
-    <div className="h-14 bg-card border-b border-border flex items-center justify-between px-6">
-      <h1 className="font-bold text-lg">Hackathon</h1>
-      <button className="text-sm text-muted">Logout</button>
+    <div className="h-14 w-full bg-card/80 backdrop-blur-md border-b border-border flex items-center justify-between px-6">
+      
+      {/* Left */}
+      <div className="flex items-center gap-2 cursor-pointer" onClick={() => navigate("/dashboard")}>
+        <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center font-bold">
+          H
+        </div>
+        <h1 className="font-semibold text-lg">Hackathon</h1>
+      </div>
+
+      {/* Right */}
+      <div className="flex items-center gap-4">
+        <span className="text-sm text-muted">Janith</span>
+
+        <button className="flex items-center gap-2 px-3 py-1 rounded-lg bg-card border border-border hover:bg-border transition">
+          <LogOut size={16} />
+          Logout
+        </button>
+      </div>
     </div>
   );
 }

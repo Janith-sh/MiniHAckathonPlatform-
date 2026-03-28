@@ -19,7 +19,7 @@ export default function Team() {
           <h2 className="text-2xl mb-4">Team</h2>
 
           {!hasTeam ? (
-            <div className="bg-card p-6 rounded-lg border border-border text-center">
+            <div className="bg-card p-5 rounded-xl border border-border hover:border-primary transition text-center">
               <p className="mb-4 text-muted">
                 You are not part of any team yet
               </p>
@@ -37,7 +37,7 @@ export default function Team() {
               </div>
             </div>
           ) : (
-            <div className="bg-card p-6 rounded-lg border border-border">
+            <div className="bg-card p-5 rounded-xl border border-border hover:border-primary transition">
               <h3 className="text-xl">Team Name</h3>
               <p className="text-muted mt-2">Members:</p>
               <ul className="mt-2">

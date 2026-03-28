@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 import Input from "../components/Input";
 import Button from "../components/Button";
+import { Hash } from "lucide-react";
 
 export default function JoinTeam() {
   return (
@@ -14,8 +15,8 @@ export default function JoinTeam() {
         <div className="flex-1 p-6">
           <h2 className="text-2xl mb-4">Join Team</h2>
 
-          <div className="bg-card p-6 rounded-lg border border-border w-96">
-            <Input placeholder="Enter Team Code" />
+          <div className="bg-card p-5 rounded-xl border border-border hover:border-primary transition w-96">
+            <Input placeholder="Enter Team Code" icon={<Hash size={16} />} />
 
             <div className="mt-4">
               <Button>Join Team</Button>
