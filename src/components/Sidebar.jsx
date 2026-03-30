@@ -7,7 +7,7 @@ export default function Sidebar() {
   const menu = [
     { name: "Dashboard", path: "/dashboard", icon: <Home size={18} /> },
     { name: "Team", path: "/team", icon: <Users size={18} /> },
-    { name: "Submit", path: "/submit", icon: <Upload size={18} /> },
+    { name: "Hackathons", path: "/hackathons", icon: <Upload size={18} /> },
   ];
 
   return (

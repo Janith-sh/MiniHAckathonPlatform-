@@ -1,4 +1,4 @@
-export default function Button({ children, type = "primary" }) {
+export default function Button({ children, type = "primary", onClick }) {
   const base = "px-4 py-2 rounded-lg font-medium transition";
 
   const styles = {
@@ -7,5 +7,5 @@ export default function Button({ children, type = "primary" }) {
     danger: "bg-danger text-white"
   };
 
-  return <button className={`${base} ${styles[type]}`}>{children}</button>;
+  return <button className={`${base} ${styles[type]}`} onClick={onClick}>{children}</button>;
 }
