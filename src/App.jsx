@@ -6,6 +6,7 @@ import Dashboard from "./pages/Dashboard";
 import Team from "./pages/Team";
 import CreateTeam from "./pages/CreateTeam";
 import JoinTeam from "./pages/JoinTeam";
+import Hackathons from "./pages/Hackthons";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/team" element={<Team />} />
         <Route path="/create-team" element={<CreateTeam />} />
         <Route path="/join-team" element={<JoinTeam />} />
+        <Route path="/hackathons" element={<Hackathons />} />
       </Routes>
     </BrowserRouter>
   );
