@@ -10,7 +10,7 @@ export const teams = [
       { id: 3, name: "Nimal", role: "member", joined: false },
     ],
     maxMembers: 5,
-    hackathon: null,
+    hackathon: 1,
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ export const teams = [
       { id: 6, name: "Mike", role: "member", joined: false },
     ],
     maxMembers: 5,
-    hackathon: null,
+    hackathon: 2,
   },
   {
     id: 3,
@@ -38,7 +38,7 @@ export const teams = [
       { id: 11, name: "Emma", role: "member", joined: true },
     ],
     maxMembers: 5,
-    hackathon: null,
+    hackathon: 3,
   },
 ];
 

@@ -6,8 +6,11 @@ import Dashboard from "./pages/Dashboard";
 import Team from "./pages/Team";
 import CreateTeam from "./pages/CreateTeam";
 import JoinTeam from "./pages/JoinTeam";
-import Hackathons from "./pages/Hackthons";
-
+import Hackathons from "./pages/Hackthons";import AdminDashboard from "./adminPages/AdminDashboard";
+import ManageHackathons from "./adminPages/ManageHackathons";
+import ManageTeams from "./adminPages/ManageTeams";
+import ManageUsers from "./adminPages/ManageUsers";
+import HackathonDetails from "./adminPages/HackathonDetails";
 function App() {
   return (
     <BrowserRouter>
@@ -20,6 +23,11 @@ function App() {
         <Route path="/create-team" element={<CreateTeam />} />
         <Route path="/join-team" element={<JoinTeam />} />
         <Route path="/hackathons" element={<Hackathons />} />
+        <Route path="/admin-dashboard" element={<AdminDashboard />} />
+        <Route path="/admin-manage-hackathons" element={<ManageHackathons />} />
+        <Route path="/admin-manage-teams" element={<ManageTeams />} />
+        <Route path="/admin-manage-users" element={<ManageUsers />} />
+        <Route path="/admin-hackathon-details/:id" element={<HackathonDetails />} />
       </Routes>
     </BrowserRouter>
   );
